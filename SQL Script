@@ -1,0 +1,2 @@
+Executing SQL Script in SQL PLUS
+SQL> @C:/Users/Neotouch/Documents/DBMSLab/create.sql;
