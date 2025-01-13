@@ -1,2 +1,9 @@
-Executing SQL Script in SQL PLUS
+#Creating SQL Script
+create table student(regno int, name varchar2(20), cgpa number(4,2),dob date, dept varchar2(3));
+alter table student add primary key(regno);
+insert into student values(1001, 'Rohith', 9.64, date '1987-04-30','280');
+insert into student values(1002, 'Virat', 9.8, to_date('04-11-1989','dd-mm-yyyy'),'280');
+insert into student values(1003, 'Jaiswal', 9.94, to_date('12-03-2001','mm-dd-yyyy'),'280');
+
+#Executing SQL Script in SQL PLUS
 SQL> @C:/Users/Neotouch/Documents/DBMSLab/create.sql;
