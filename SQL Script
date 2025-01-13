@@ -13,6 +13,11 @@ insert into student values(1003, 'Jaiswal', 9.94, to_date('12-03-2001','mm-dd-yy
 create table department(deptID varchar2(3), deptName varchar2(4),hod varchar2(20));
 alter table department add primary key(deptID);
 alter table department modify deptID number(3);
+insert into department values('030','CSE', 'Dr. Sutha');
+insert into department values('280','CC', 'Dr. Uma');
+insert into department values('240','AIML', 'Dr. ShankarRam');
+insert into department values('320','CS', 'Dr. Shiney');
+insert into department values('360','IOT', 'Dr. UshaRuby');
 
 #Executing SQL Script in SQL PLUS
 SQL> @C:/Users/Neotouch/Documents/DBMSLab/create.sql;
