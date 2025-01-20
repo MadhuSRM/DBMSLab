@@ -1,3 +1,7 @@
+#Executing SQL Script in SQL PLUS
+SQL> @C:/Users/Neotouch/Documents/DBMSLab/create.sql;
+
+
 #Creating SQL Script
 
 #Student Relation
@@ -19,5 +23,13 @@ insert into department values('240','AIML', 'Dr. ShankarRam');
 insert into department values('320','CS', 'Dr. Shiney');
 insert into department values('360','IOT', 'Dr. UshaRuby');
 
-#Executing SQL Script in SQL PLUS
-SQL> @C:/Users/Neotouch/Documents/DBMSLab/create.sql;
+#Batsman Relation
+create table batsman (name varchar2(20), country varchar2(12), mat number(3), inn number(3), runs number(5), avg number(4,2), Hundreds number(2), Fifties number(2), NotOuts number(2), StrikeRate number(5,2), Highest number(3));
+alter table batsman add primary key(name);
+insert into batsman values('Sachin','India',200,330, 15923, 53.86, 51, 62, 32, 54.27, 248);
+insert into batsman values('Lara','WestIndies',132,232, 11953, 52.51, 34, 48, 6, 60.81, 400);
+insert into batsman values('Rahul','India',164,286, 13286, 52.21, 36, 62, 32, 42.57, 270);
+insert into batsman values('Kallis','SouthAfrica',166,280, 13288, 55.07, 45, 58, 40, 47.67, 250);
+insert into batsman values('Ponting','Australia',168,287, 13378, 51.85, 42, 61, 40, 58.67, 257);
+insert into batsman values('Chandrapaul','WestIndies',152,262, 11244, 51.51, 30, 48, 16, 42.81, 230);
+insert into batsman values('Smith','Australia',128,237, 11378, 57.85, 35, 51, 30, 54.67, 267);
