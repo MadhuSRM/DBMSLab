@@ -1,0 +1,91 @@
+SQL> create table A (id number, age number, dept varchar2(5));
+
+Table created.
+
+SQL> create table B (id number, age number, dept varchar2(5));
+
+Table created.
+
+SQL> insert into A values (101, 18, 'CSE');
+
+1 row created.
+
+SQL> insert into A values (102, 19, 'CSE');
+
+1 row created.
+
+SQL> insert into A values (103, 19, 'ECE');
+
+1 row created.
+
+SQL> insert into A values (104, 20, 'EEE');
+
+1 row created.
+
+SQL> insert into B values (108, 20, 'MECH');
+
+1 row created.
+
+SQL> insert into B values (107, 19, 'Civil');
+
+1 row created.
+
+SQL> insert into B values (101, 18, 'CSE');
+
+1 row created.
+
+SQL> insert into B values (103, 19, 'ECE');
+
+1 row created.
+
+SQL> select * from A;
+
+        ID        AGE DEPT
+---------- ---------- -----
+       101         18 CSE
+       102         19 CSE
+       103         19 ECE
+       104         20 EEE
+
+SQL> select * from B;
+
+        ID        AGE DEPT
+---------- ---------- -----
+       108         20 MECH
+       107         19 Civil
+       101         18 CSE
+       103         19 ECE
+
+SQL> select * from A union select * from B;
+
+        ID        AGE DEPT
+---------- ---------- -----
+       101         18 CSE
+       102         19 CSE
+       103         19 ECE
+       104         20 EEE
+       108         20 MECH
+       107         19 Civil
+
+6 rows selected.
+
+SQL> select * from A intersect select * from B;
+
+        ID        AGE DEPT
+---------- ---------- -----
+       101         18 CSE
+       103         19 ECE
+
+SQL> select * from A except select * from B;
+
+        ID        AGE DEPT
+---------- ---------- -----
+       102         19 CSE
+       104         20 EEE
+
+SQL> select * from A minus select * from B;
+
+        ID        AGE DEPT
+---------- ---------- -----
+       102         19 CSE
+       104         20 EEE
