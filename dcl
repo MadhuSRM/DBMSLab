@@ -58,3 +58,12 @@ Connected.
 
 SQL> SHOW user;
 USER is "SRM"
+
+
+SQL> select table_name from user_tables;
+
+TABLE_NAME
+--------------------------------------------------------------------------------
+DEPOSITOR
+STUDENT
+BORROWER
