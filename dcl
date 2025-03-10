@@ -1,15 +1,3 @@
--- Using Container Database System
-
-SQL> show con_name;
-
-CON_NAME
-------------------------------
-CDB$ROOT
-
-SQL> create user c##srm identified by srm;
-
-User created.
-
 SQL> grant create session to c##srm;
 
 Grant succeeded.
