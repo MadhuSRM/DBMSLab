@@ -22,36 +22,3 @@ Grant succeeded.
 SQL> GRANT select ANY TABLE TO c##srm;
 
 Grant succeeded.
-
-SQL> show user;
-USER is "C##SRM"
-
--- Using Pluggabale Database System
-
-SQL> alter session set container = xepdb1;
-
-Session altered.
-
-SQL> show user;
-USER is "SYSTEM"
-
-SQL> show con_name;
-
-CON_NAME
-------------------------------
-XEPDB1
-
-SQL> CONNECT srm/srm@localhost:1521/XEPDB1;
-Connected.
-
-SQL> SHOW user;
-USER is "SRM"
-
-
-SQL> select table_name from user_tables;
-
-TABLE_NAME
---------------------------------------------------------------------------------
-DEPOSITOR
-STUDENT
-BORROWER
