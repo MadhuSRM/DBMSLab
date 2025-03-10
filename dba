@@ -1,1 +1,8 @@
+SQL> select username from all_users where oracle_maintained = 'N';
+
+USERNAME
+--------------------------------------------------------------------------------
+C##SRM
+
+
 
