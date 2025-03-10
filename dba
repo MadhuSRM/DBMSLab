@@ -4,5 +4,16 @@ USERNAME
 --------------------------------------------------------------------------------
 C##SRM
 
+-- Using Container Database System
+
+SQL> show con_name;
+
+CON_NAME
+------------------------------
+CDB$ROOT
+
+SQL> create user c##srm identified by srm;
+
+User created.
 
 
