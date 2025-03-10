@@ -1,3 +1,13 @@
+-- List tables owned by the current user
+SELECT table_name FROM user_tables;
+
+-- List tables accessible to the current user
+SELECT table_name FROM all_tables;
+
+-- List all tables in the database
+SELECT table_name FROM dba_tables;
+
+
 SQL> select username from all_users where oracle_maintained = 'N';
 
 USERNAME
