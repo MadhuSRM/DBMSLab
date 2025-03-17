@@ -1,0 +1,13 @@
+declare
+  score int;
+begin
+  score:=89;
+  IF score >= 90 THEN
+  DBMS_OUTPUT.PUT_LINE('Grade A');
+  ELSIF score >= 80 THEN
+  DBMS_OUTPUT.PUT_LINE('Grade B');
+  ELSE
+  DBMS_OUTPUT.PUT_LINE('Grade C');
+  END IF;
+end;
+/
