@@ -44,4 +44,20 @@ DBMS_OUTPUT.PUT_LINE('Sum=' || sumValue);
 END;
 /
 
+--Accepting User Input
+accept x number prompt 'Enter the value of N: '
 
+--While Loop
+DECLARE
+  fact INTEGER := 1;
+  i INTEGER :=1;
+  n INTEGER;
+BEGIN
+  n := &x;
+  WHILE i < n LOOP
+    fact := fact * i;
+    i:= i+1;
+  END LOOP;
+DBMS_OUTPUT.PUT_LINE('Factorial=' || fact);
+END;
+/
