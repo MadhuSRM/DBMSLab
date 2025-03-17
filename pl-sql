@@ -30,3 +30,18 @@ BEGIN
 END;
 /
 
+-- Basic Loop
+DECLARE
+  sumValue INTEGER := 0;
+BEGIN
+  LOOP
+    sumValue := sumValue + 1;
+    IF sumValue > 10 THEN
+       EXIT;
+    END IF;
+  END LOOP;
+DBMS_OUTPUT.PUT_LINE('Sum=' || sumValue);
+END;
+/
+
+
